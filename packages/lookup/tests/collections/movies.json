@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "The Lion King",
+    "commentsChannel": [
+      "twitter",
+      "facebook"
+    ],
+    "rating": 4.0
+  },
+  {
+    "id": 2,
+    "name": "Jurassic Park",
+    "commentsChannel": [
+      "twitter",
+      "facebook",
+      "youtube"
+    ],
+    "rating": 5.0
+  }
+]

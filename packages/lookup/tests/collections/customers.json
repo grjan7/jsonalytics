@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Robert",
+    "contact": "+91-6524826613",
+    "ssn": "21543612458",
+    "address": "123 Main Street, NY, USA"
+  },
+  {
+    "id": 2,
+    "name": "Aaron",
+    "contact": "+91-6500006613",
+    "ssn": "31543752458",
+    "address": "147 Johnes Street, NY, USA"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "commentId": 1,
+    "movieId": 1,
+    "comment": "Nice Movie",
+    "channel": "twitter"
+  },
+  {
+    "commentId": 2,
+    "movieId": 1,
+    "comment": "Not bad.",
+    "channel": "facebook"
+  },
+  {
+    "commentId": 3,
+    "movieId": 2,
+    "comment": "Good movie.",
+    "channel": "youtube"
+  },
+  {
+    "commentId": 4,
+    "movieId": 1,
+    "comment": "Awsome movie.",
+    "channel": "facebook"
+  }
+]

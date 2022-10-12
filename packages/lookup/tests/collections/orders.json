@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "customerId": 2,
+    "date": "2022-10-14",
+    "items": "Shoe",
+    "quantity": 2,
+    "unitPrice": "$40"
+  },
+  {
+    "id": 2,
+    "customerId": 1,
+    "date": "2022-10-14",
+    "items": "Shoe",
+    "quantity": 4,
+    "unitPrice": "$40"
+  },
+  {
+    "id": 3,
+    "customerId": 2,
+    "date": "2022-10-14",
+    "items": "Razor",
+    "quantity": 1,
+    "unitPrice": "$10"
+  },
+  {
+    "id": 4,
+    "customerId": 1,
+    "date": "2022-10-16",
+    "items": "Belt",
+    "quantity": 1,
+    "unitPrice": "$80"
+  },
+  {
+    "id": 5,
+    "customerId": 2,
+    "date": "2022-10-16",
+    "items": "Fish Tank",
+    "quantity": 1,
+    "unitPrice": "$200"
+  }
+]

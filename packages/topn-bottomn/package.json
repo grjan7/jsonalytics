@@ -1,0 +1,22 @@
+{
+  "name": "@jsonalytics/topn-bottomn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "object",
+    "array",
+    "top",
+    "bottom",
+    "skip",
+    "limit",
+    "createIndex",
+    "sort"
+  ],
+  "author": "Jana Rangasamy <janagr7@gmail.com>",
+  "license": "ISC",
+  "description": "Returns top or bottom n number of objects from a given object array based on the value of the sort Key."
+}
