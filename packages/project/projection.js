@@ -1,3 +1,5 @@
+// need bug fixing
+
 const ignoreOrInclude = (obj) => {
   let sumValue = 0;
   let keysLength = 0;
@@ -16,23 +18,68 @@ const ignoreOrInclude = (obj) => {
   }
 }
 
+const mergeObj = (obj1, obj2) => {
+  for (let key in obj2) {
+    if (obj1[key] == undefined) {
+      obj1[key] = obj2[key];
+    } else {
+
+    }
+  }
+  return obj1;
+}
+
+const valueOfKey = (srcObj, keyString) => {
+
+  let resolvedValue = srcObj;
+  let retObj = {};
+  let keysArr = keyString.split(".");
+  let lastIndex = keysArr.length - 1;
+
+  for (let i in keysArr) {
+    let key = keysArr[i];
+
+    resolvedValue = resolvedValue[key];
+
+    if (i == lastIndex) {
+      retObj[key] = resolvedValue;
+    } else {
+
+    }
+
+  }
+
+  return resolvedValue;
+}
+
+/*
+
+"a.b"
+"a[0].b"
+"a.b[0]"
+ */
+
 const project = (objArray, projectKeys) => {
 
   const isIgnoreOrInclude = ignoreOrInclude(projectKeys);
 
   const projectArray = objArray.map((obj) => {
+
     let projectedObj = {};
+
     if (isIgnoreOrInclude == 1) {
       for (let key in projectKeys) {
-        projectedObj[key] = obj[key];
+        projectedObj = mergeObj(projectedObj, valueOfKey(obj, key));
       }
     }
+
     if (isIgnoreOrInclude == 0) {
       projectedObj = obj;
       for (let key in projectKeys) {
         delete projectedObj[key];
       }
     }
+
     return projectedObj;
   });
 
@@ -58,5 +105,5 @@ const objArray = [{
 
 project(objArray, {
   name: 1,
-  salary:1
+  salary: 1
 })

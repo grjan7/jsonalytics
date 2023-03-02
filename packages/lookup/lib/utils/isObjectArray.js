@@ -1,5 +1,12 @@
 'use strict';
 
-const isObjectArray = (arg) => Array.isArray(arg) && arg.every((it) => typeof it == 'object' && it != null && it != undefined && !Array.isArray(it));
+const isValidObj = (arg) => (typeof arg == 'object') &&
+  (!Array.isArray(arg)) &&
+  (arg != null) &&
+  (arg != undefined);
 
-module.exports = isObjectArray;
+const isObjectArray = (arg) => Array.isArray(arg) &&
+  (arg.length > 0) &&
+  arg.every(it => isValidObj(it));
+
+module.exports = isObjectArray
